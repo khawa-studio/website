@@ -1,3 +1,5 @@
-export default function Home() {
+const HomePage = () => {
   return <main>Khawa Studio</main>;
-}
+};
+
+export default HomePage;

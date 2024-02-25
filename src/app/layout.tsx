@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
+
+import { Layout } from "@/types";
 
 export const metadata: Metadata = {
   title: "Khawa Studio",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const RootLayout: Layout = (props) => {
   return (
     <html lang="tb">
-      <body>{children}</body>
+      <body>{props.children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;
