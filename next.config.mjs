@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const config = {
-	sassOptions: {},
+	rewrites: async () => {
+		return [];
+	},
 };
 
 export default config;
