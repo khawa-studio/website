@@ -2,6 +2,8 @@ import { Metadata } from "next";
 
 import { Layout } from "@/types";
 
+import "@/styles/global.scss";
+
 export const metadata: Metadata = {
   title: "Khawa Studio",
 };
