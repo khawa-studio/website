@@ -1,7 +1,13 @@
 import { NextPage } from "next";
 
+import Title from "./$components/Title";
+
 const HomePage: NextPage = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <Title />
+    </>
+  );
 };
 
 export default HomePage;

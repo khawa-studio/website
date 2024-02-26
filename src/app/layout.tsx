@@ -1,8 +1,12 @@
 import { Metadata } from "next";
 
+import "@/styles/global.scss";
+
 import { Layout } from "@/types";
 
-import "@/styles/global.scss";
+import Header from "./$components/Header";
+
+import styles from "./layout.module.scss";
 
 export const metadata: Metadata = {
   title: "Khawa Studio",
@@ -11,7 +15,10 @@ export const metadata: Metadata = {
 const RootLayout: Layout = (props) => {
   return (
     <html lang="tb">
-      <body>{props.children}</body>
+      <body className={styles.body}>
+        <Header />
+        {props.children}
+      </body>
     </html>
   );
 };
