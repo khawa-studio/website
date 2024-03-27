@@ -1,15 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
-
-import styles from "./page.module.scss";
+import styles from "./page.module.css";
 
 const HomePage = () => {
-  useEffect(() => {
-    console.log(styles);
-  }, []);
-
-  return <main className={styles.main}>Khawa Studio</main>;
+	return <main className={styles.main}></main>;
 };
 
 export default HomePage;

@@ -1,13 +1,15 @@
-import { NextPage } from "next";
+"use client";
 
-import Title from "./$components/Title";
+import LandingBlock from "./$components/LandingBlock";
 
-const HomePage: NextPage = () => {
-  return (
-    <>
-      <Title />
-    </>
-  );
+import styles from "./page.module.css";
+
+const HomePage = () => {
+	return (
+		<main className={styles.main}>
+			<LandingBlock />
+		</main>
+	);
 };
 
 export default HomePage;
